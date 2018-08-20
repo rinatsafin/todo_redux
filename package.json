@@ -1,0 +1,54 @@
+{
+  "name": "todo_react_redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rinatsafin/todo_redux.git"
+  },
+  "keywords": [
+    "todo",
+    "react",
+    "redux"
+  ],
+  "author": "Rinat Safin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rinatsafin/todo_redux/issues"
+  },
+  "homepage": "https://github.com/rinatsafin/todo_redux#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^4.5.2",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.9.3",
+    "prop-types": "^15.6.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
