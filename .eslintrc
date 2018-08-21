@@ -24,6 +24,13 @@
     "API_PRIVATE_KEY": true
   },
   "rules": {
+    "additional-rules-": {
+      "rules": {
+        "import/no-extraneous-dependencies": [
+          "error", {"devDependencies": true}
+        ]
+      }
+    },
     "linebreak-style": 0,
     "no-tabs": 0,
     "indent": ["error", 2],
