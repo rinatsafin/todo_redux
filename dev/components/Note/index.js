@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import styles from "./note.css";
 
@@ -43,20 +44,21 @@ class Note extends React.Component {
   }
 
   render() {
-    const {children, id, remove, color, } = this.props;
+    const { children, id, remove, color, } = this.props;
+    const { text, isChange,  } = this.state;
     return (
       <div className={styles.note}>
         {
-          this.state.isChange ? (
+          isChange ? (
             <form onSubmit={this.changeNote}>
               <input
                 onChange={e => this.setState({
-                  text: e.target.value
+                  text: e.target.value,
                 })}
                 type="text"
-                value={this.state.text}
+                value={text}
               />
-              <button>save</button>
+              <button type="submit">save</button>
             </form>
           ) : (
             <div>
@@ -86,5 +88,13 @@ class Note extends React.Component {
     )
   }
 }
+
+Note.propTypes = {
+  id: PropTypes.number.isRequired,
+  children: PropTypes.string.isRequired,
+  change: PropTypes.func.isRequired,
+  remove: PropTypes.func.isRequired,
+  color: PropTypes.string.isRequired,
+};
 
 export default Note;
