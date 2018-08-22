@@ -86,6 +86,8 @@ module.exports = {
               loader: "sass-loader",
               options: {
                 sourceMap: true,
+                modules: true,
+                localIdentName: devMode ? "[name]__[local]__[hash:base64:5]" : "[hash:base64:12]",
               },
             },
           ],

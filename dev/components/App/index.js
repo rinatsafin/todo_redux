@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "../Form";
-import NotesList from "../NoteList";
+import NotesList from "../NotesList";
 
 import styles from "./app.css";
 import imageScarlett from "./Scarlett_Johansson.jpg";

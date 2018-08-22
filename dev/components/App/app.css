@@ -20,6 +20,5 @@
 }
 
 .header {
-  composes: empty from '../NotesList/notelist.css';
+  composes: empty from '../NotesList/noteslist.css';
 }
-

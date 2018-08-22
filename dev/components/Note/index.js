@@ -91,10 +91,10 @@ class Note extends React.Component {
 
 Note.propTypes = {
   id: PropTypes.number.isRequired,
-  children: PropTypes.string.isRequired,
   change: PropTypes.func.isRequired,
   remove: PropTypes.func.isRequired,
-  color: PropTypes.string.isRequired,
+  color: PropTypes.object.isRequired,
+  children: PropTypes.string.isRequired,
 };
 
 export default Note;

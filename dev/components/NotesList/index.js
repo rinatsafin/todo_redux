@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import Note from "../Note";
 
-import styles from "./notelist.css";
+import styles from "./noteslist.css";
 
 const NotesList = (props) => {
   const { notes, removeNote, changeNote, } = props;
@@ -17,6 +17,7 @@ const NotesList = (props) => {
               id={note.id}
               remove={removeNote}
               change={changeNote}
+              color={{ color: "red", }}
             >
               {note.text}
             </Note>	
@@ -30,7 +31,7 @@ const NotesList = (props) => {
 };
 
 NotesList.propTypes = {
-  notes: PropTypes.string.isRequired,
+  notes: PropTypes.array.isRequired,
   removeNote: PropTypes.func.isRequired,
   changeNote: PropTypes.func.isRequired,
 };
