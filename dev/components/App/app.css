@@ -11,7 +11,7 @@
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  background-color: #fff;
+  background-color: #969696;
 }
 
 .app {
@@ -21,4 +21,15 @@
 
 .header {
   composes: empty from '../NotesList/noteslist.css';
+  color: #000;
+}
+
+.img {
+  background-color: #fff;
+  border-radius: 2px;
+  display: block;
+  height: 160px;
+  border: 4px solid #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .07);
+  margin: 0 auto 20px;
 }
