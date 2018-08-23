@@ -70,16 +70,14 @@ export default App;
 //       notes: newNotes,
 //     });
 //   }
-	
+
 //   render() {
 //     const { notes, } = this.state;
 //     return (
 //       <div className={styles.app}>
 //         <h1 className={styles.header}>Notes</h1>
-//         <img src={imageScarlett} alt="Not Valera" />
-
+//         <img className={styles.img} src={imageScarlett} alt="Not Valera" />
 //         <Form handleNote={this.addNote} />
-
 //         <NotesList
 //           notes={notes}
 //           removeNote={this.removeNote}
